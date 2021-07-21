@@ -1,0 +1,121 @@
+.active-todo-container {
+    border-radius: 6px;
+    background-color: #fff;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 5px 0px rgba(158,160,161,0.73);
+    .active-todo-container-header {
+        font: 20px;
+        font-weight: 500;
+        padding: 10px 20px;
+        border-bottom: 1px solid #e0dede;
+        margin-bottom: 20px;
+    }
+
+    .active-todo-container-body {
+        
+        
+        .todo-row {
+            padding: 15px;
+            border-bottom: 1px solid #e0dede;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-right: 40px;
+
+            &:last-of-type {
+                border-bottom: unset;
+            }
+            .row-left { 
+            display: flex;
+            align-items: flex-start;
+            
+            .circle {
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                border: 1px solid #e0dede;
+                margin-right: 30px;
+            }
+
+            p {
+                font-size: 14px;
+                color: #929191;
+            }
+            div {
+                    .date {
+                        .green {
+                            margin-right: 10px;
+                            display: inline-block;
+                            height: 10px;
+                            width: 10px;
+                            border-radius: 50%;
+                            background-color: rgba(0, 255, 98, 0.808);
+                        }
+                        .yellow {
+                            @extend .green;
+                            background: #fbff00;
+                        }
+                        .red {
+                            @extend .green;
+                            background: #f00;
+                        }
+                }
+            }
+            
+            
+            }   
+            .options {
+                display: flex;
+
+                .toggle-button {
+                    height: 30px;
+                    width: 20px;
+                    padding: unset;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #fff;
+                    color: #000;
+                    border-radius: unset;
+                    border: 1px solid #e0dede;
+                    border-left: unset;
+
+                    &:focus {
+                        box-shadow: unset;
+                    }
+                }
+            }
+        }
+
+
+        .completed-row {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            .completed-tick {
+                background-image: url("../../Assets/tick.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 15px;
+                width: 25px;
+                margin-right: 10px;
+            }
+            .completed-heading {
+                text-decoration-line: line-through;
+            }
+            .dot {
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+                background-color: #929191;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            .task-finished-date {
+                font-size: 14px;
+                color: #929191
+            }
+        }
+    }
+}

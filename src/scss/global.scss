@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    background-color: $background-color;
+    font-family: 'Roboto'
+}
+
+.emptyData-msg {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    background: #868484;
+    margin-bottom: 40px;
+}

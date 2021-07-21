@@ -1,0 +1,27 @@
+.search-container {
+    margin-bottom: 40px;
+    .search-input {
+        width: 50%;
+        
+        .search-input-box {
+            border-radius: 20px;
+            border-right: unset;
+            
+            &:focus {
+                box-shadow: unset;
+                border-color:  #ced4da;
+            }
+        }
+        .append {
+            background: #fff;
+            border-radius: 20px;
+            .search-icon {
+                background: url('../../Assets/search.svg') no-repeat center;
+                height: 15px;
+                width: 15px;
+                
+            }
+        }
+
+    }
+}

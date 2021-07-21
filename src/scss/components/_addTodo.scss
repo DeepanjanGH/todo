@@ -1,0 +1,15 @@
+.isEdit-button {
+    height: 30px ;
+    width: 40px;
+    border-radius: unset;
+    border: 1px solid #e0dede;
+    color: #000;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:focus {
+        box-shadow: unset;
+    }
+}

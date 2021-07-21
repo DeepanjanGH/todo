@@ -1,0 +1,17 @@
+.todo-container {
+    width: 80%;
+    margin: auto;
+
+    .todo-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        span { 
+            font: 'Roboto';
+            font-size: 25px;
+            font-weight: 700;
+        }
+    }
+}

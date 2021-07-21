@@ -1,0 +1,12 @@
+// basic styling
+
+@import './variables.scss';
+@import './global.scss';
+
+// components
+
+@import './components/header';
+@import './components/todocontainer';
+@import './components/activeTodoList';
+@import './components/addTodo';
+@import './components/search'
