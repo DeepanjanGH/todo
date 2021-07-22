@@ -19,7 +19,7 @@ const  AddTodo = ({
             setHeader(editData.heading);
             setDescription(editData.description);
         }
-    }, [isEdit])
+    }, [isEdit,editData])
     return (
       <>
         <Button  variant={isEdit ? "outline-primary" : "primary"} className={isEdit ? "isEdit-button" : ""} onClick={handleShow}>
@@ -62,7 +62,7 @@ const  AddTodo = ({
                     heading: header,
                     description: description,
                     time: new Date().getTime(),
-                    isEdited: isEdit,
+                    isEdited: isEdit ? isEdit : false,
                     id: Math.floor(100000 + Math.random() * 900000),
                 }, isEdit, editRowIndex)
             }}>
