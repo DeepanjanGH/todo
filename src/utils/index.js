@@ -1,5 +1,3 @@
-import TodoContainer from "../containers/TodoContainer";
-
 export const getDay = (timestamp) => {
     let date = new Date(timestamp).getDate();
     let ordinal = date === 1 ? 'st' : date === 2 ? 'nd' : date > 2 ? 'th' : 'th';
@@ -34,8 +32,8 @@ export const getActiveTodoDates = (timestamp) => {
 }
 
 export const getdateColor = (timestamp) => {
-    let dayNumber = new Date(timestamp).getDay();
-    let todayDayNumber = new Date().getDay();
+    let dayNumber = new Date(timestamp).getDate();
+    let todayDayNumber = new Date().getDate();
     return dayNumber === todayDayNumber ? "green" : 
             dayNumber === todayDayNumber - 1 ? "yellow": 
                 dayNumber < todayDayNumber - 1 ? "red" : "red"
