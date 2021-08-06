@@ -3,11 +3,11 @@ import AddTodo from "../components/AddTodo";
 import ActiveTodoList from "../components/ActiveTodoList";
 import CompletedTodoList from "../components/CompletedTodoList";
 import Search from "../components/Search";
-import { TodoContext } from "../context/TodoContext";
+import { TodoContextProvider } from "../context/TodoContext";
 
 const TodoContainer = () => {
   return (
-    <TodoContext>
+    <TodoContextProvider>
       <div className='todo-container'>
         <div className='todo-header'>
           <span>To Do List</span>
@@ -18,7 +18,7 @@ const TodoContainer = () => {
         <hr></hr>
         <CompletedTodoList />
       </div>
-    </TodoContext>
+    </TodoContextProvider>
   );
 };
 

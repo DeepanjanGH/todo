@@ -47,7 +47,7 @@ const initialCompletedList = [
 
 
 
-export const TodoContextProvide = ({
+export const TodoContextProvider = ({
     children
 }) => {
     const [todoList, setTodoList] = useState([...initalTodoList])
